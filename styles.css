@@ -4,6 +4,7 @@ body {
     box-sizing: border-box;
     background: linear-gradient(90deg, rgba(255,247,173,1) 0%, rgba(255,231,189,1) 35%, rgba(255,180,238,1) 100%);
    background-repeat: no-repeat;
+   width: auto;
   }
   
 /* Header CSS */
@@ -152,27 +153,40 @@ nav ul li a:hover {
     padding: 20px;
     margin-left: 60px;
   }
+
 /* Media Queries */
-@media only screen and (max-width: 768px) {
-   
-  /* Styles for tablets */
-  nav ul li {
-    margin-right: 3%; /* Adjust margin for smaller screens */
+@media only screen and (max-width: 1128px) {
+    /* Styles for tablets */
+    nav ul li {
+      margin-right: 3%; /* Adjust margin for smaller screens */
+    }
+    .main-section {
+      flex-direction: column;
+      padding: 30px;
+      gap: 20px;
+    }
+    .content-left,
+    .content-right {
+      flex: none;
+      width: 100%;
+      padding: 0;
+    }
+    .second-section {
+      flex-direction: column;
+      gap: 20px;
+      align-items: center;
+      justify-content: center;
+    }
+    .right-side{
+        margin: 0;
+    }
   }
-  .main-section {
-    flex-direction: column;
-  }
-  .content-left,
-  .content-right {
-    flex: none;
-    width: 100%;
-    padding: 0;
-  }
-  .second-section{
-    flex-direction: column;
-  }
-}
-@media only screen and (max-width: 480px) {
+  
+  @media only screen and (max-width: 480px) {
+    body {
+      width: 100%; /* Adjust width for smaller screens */
+    }
+  
     nav ul li {
       display: block;
       width: 100%; /* Make each list item take 100% width */
@@ -185,5 +199,19 @@ nav ul li a:hover {
       display: block; /* Ensure links take up the full width on smaller screens */
       padding: 8px 0; /* Adjust padding for smaller screens */
     }
-    
+  
+    /* Adjustments for second-section content */
+    .first-col img,
+    .second-col img {
+      width: 80%; /* Adjust image width for smaller screens */
+      height: auto;
+      margin-bottom: 10px;
+    }
+  
+    .right-side {
+      width: 90%; /* Adjust the width of the right-side content */
+      margin: 20px auto;
+      padding: 10px;
+    }
   }
+  
