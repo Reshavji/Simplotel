@@ -174,8 +174,7 @@ nav ul li a:hover {
     .second-section {
       flex-direction: column;
       gap: 20px;
-      align-items: center;
-      justify-content: center;
+     
     }
     .right-side{
         margin: 0;
