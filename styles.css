@@ -3,7 +3,7 @@ body {
     font-family: "Times New Roman", Times, serif;
     box-sizing: border-box;
     background: linear-gradient(90deg, rgba(255,247,173,1) 0%, rgba(255,231,189,1) 35%, rgba(255,180,238,1) 100%);
-   
+   background-repeat: no-repeat;
   }
   
 /* Header CSS */
