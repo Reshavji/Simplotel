@@ -153,6 +153,26 @@ nav ul li a:hover {
     padding: 20px;
     margin-left: 60px;
   }
+/* Hide the checkbox */
+#menu-toggle {
+    display: none;
+  }
+  
+  /* Hide the navigation by default */
+ 
+  
+  /* Show the hamburger icon only for small devices */
+  #ham-icon {
+    height: 15px;
+    margin-right: 20px;
+    display: none;
+    
+  }
+  
+  /* Show the navigation when the checkbox is checked */
+  #menu-toggle:checked + label + nav {
+    display: block;
+  }
 
 /* Media Queries */
 @media only screen and (max-width: 1128px) {
@@ -160,6 +180,18 @@ nav ul li a:hover {
     nav ul li {
       margin-right: 3%; /* Adjust margin for smaller screens */
     }
+    nav {
+        display: none;
+      }
+    #menu-toggle {
+        display: none;
+      }
+      #menu-label{
+        margin-left: 20px;
+      }
+      #ham-icon {
+        display: inline-block;
+      }
     .main-section {
       flex-direction: column;
       padding: 30px;
@@ -179,6 +211,9 @@ nav ul li a:hover {
     .right-side{
         margin: 0;
     }
+    nav {
+        display: none;
+      }
   }
   
   @media only screen and (max-width: 480px) {
@@ -209,7 +244,9 @@ nav ul li a:hover {
         width: 150px;
         height: 309px;
       }
-  
+      nav {
+        display: none;
+      }
     .right-side {
       width: 90%; /* Adjust the width of the right-side content */
       margin: 20px auto;
