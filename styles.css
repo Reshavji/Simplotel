@@ -199,13 +199,16 @@ nav ul li a:hover {
       padding: 8px 0; /* Adjust padding for smaller screens */
     }
   
-    /* Adjustments for second-section content */
-    .first-col img,
-    .second-col img {
-      width: 80%; /* Adjust image width for smaller screens */
-      height: auto;
-      margin-bottom: 10px;
-    }
+    .first-col img {
+        width: 100px;
+        height: 150px;
+        margin-bottom: 10px;
+      }
+      
+      .second-col img {
+        width: 100px;
+        height: 309px;
+      }
   
     .right-side {
       width: 90%; /* Adjust the width of the right-side content */
