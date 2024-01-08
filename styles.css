@@ -1,0 +1,109 @@
+body {
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  /* Header CSS */
+  header {
+    background-color: #ff7171;
+    padding: 15px 0;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin-right: 5%; /* Adjust margin for responsiveness */
+  }
+  
+  nav ul li:last-child {
+    margin-right: 0;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: 1px; /* Adjust letter spacing for smaller screens */
+    color: #000;
+    padding: 10px 15px; /* Add padding for better touch experience on smaller screens */
+    display: block; /* Ensure links take up the full width on smaller screens */
+  }
+  
+  nav ul li a:hover {
+    color: #ffd700;
+  }
+
+/* Main CSS */
+
+  .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px; /* Adjust as needed */
+  }
+  
+  .main-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .content-left {
+    flex: 1;
+    padding-right: 20px; /* Adjust as needed */
+  }
+  
+  .content-right {
+    flex: 1;
+  }
+  
+  .content-right img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
+
+
+
+
+
+
+
+
+
+  
+  /* Media Queries */
+  @media only screen and (max-width: 768px) {
+    /* Styles for tablets */
+    nav ul li {
+      margin-right: 3%; /* Adjust margin for smaller screens */
+    }
+    .main-section {
+        flex-direction: column;
+      }
+      .content-left,
+      .content-right {
+        flex: none;
+        width: 100%;
+        padding: 0;
+      }
+  }
+  
+  @media only screen and (max-width: 480px) {
+    /* Styles for mobile devices */
+    nav ul li {
+      display: block;
+      margin: 0;
+    }
+  
+    nav ul li a {
+      padding: 8px 12px; /* Adjust padding for smaller screens */
+    }
+  }
+  
