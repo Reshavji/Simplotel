@@ -163,7 +163,7 @@ nav ul li a:hover {
     flex: 1;
     background-color: #ff7171;
     font-family: Arial, Helvetica, sans-serif;
-    max-width: 35%;
+    max-width: 90%;
     padding: 20px; /* Adjusted padding */
     margin-left: 3%;
   }
@@ -186,7 +186,7 @@ nav ul li a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 5px; /* Reduce gap between the button content and the icon */
+    gap: 10px; /* Reduce gap between the button content and the icon */
     border: none;
     text-align: center;
     margin-top: 25px; /* Adjusted margin */
@@ -201,81 +201,81 @@ nav ul li a:hover {
   }
 /* Media Queries */
 @media only screen and (max-width: 1128px) {
-    /* Styles for tablets */
-    nav ul li {
-      margin-right: 3%; /* Adjust margin for smaller screens */
-    }
-    nav {
-        display: none;
-      }
-    #menu-toggle {
-        display: none;
-      }
-      #menu-label{
-        margin-left: 20px;
-      }
-      #ham-icon {
-        display: inline-block;
-      }
-    .main-section {
-      flex-direction: column;
-      padding: 30px;
-      gap: 20px;
-    }
-    .content-left,
-    .content-right {
-      flex: none;
-      width: 100%;
-      padding: 0;
-    }
-    .second-section {
-      flex-direction: column;
-      gap: 20px;
-     
-    }
-    .right-side{
-        margin: 0;
-    }
-    nav {
-        display: none;
-      }
+  /* Styles for tablets */
+  nav ul li {
+    margin-right: 3%; /* Adjust margin for smaller screens */
+  }
+  nav {
+    display: none;
+  }
+  #menu-toggle {
+    display: none;
+  }
+  #menu-label {
+    margin-left: 20px;
+  }
+  #ham-icon {
+    display: inline-block;
+  }
+  .main-section {
+    flex-direction: column;
+    padding: 30px;
+    gap: 20px;
+  }
+  .content-left,
+  .content-right {
+    flex: none;
+    width: 100%;
+    padding: 0;
+  }
+  .second-section {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .right-side {
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  body {
+    width: 100%; /* Adjust width for smaller screens */
   }
 
-  @media only screen and (max-width: 480px) {
-    body {
-      width: 100%; /* Adjust width for smaller screens */
-    }
-  
-    nav ul li {
-      display: block;
-      width: 100%; 
-      text-align: center; /* Center the text */
-      margin: 0;
-      padding: 8px 0; /* Adjust padding for smaller screens */
-    }
-  
-    nav ul li a {
-      display: block; 
-      padding: 8px 0;
-    }
-  
-    .first-col img {
-        width: 150px;
-        height: 150px;
-        margin-bottom: 10px;
-      }
-      
-      .second-col img {
-        width: 150px;
-        height: 309px;
-      }
-      nav {
-        display: none;
-      }
-    .right-side {
-      width: 90%; 
-      margin: 20px auto;
-      padding: 10px;
-    }
+  nav ul li {
+    display: block;
+    width: 100%;
+    text-align: center; /* Center the text */
+    margin: 0;
+    padding: 8px 0; /* Adjust padding for smaller screens */
   }
+
+  nav ul li a {
+    display: block;
+    padding: 8px 0;
+  }
+
+  .first-col img {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 10px;
+  }
+
+  .second-col img {
+    width: 150px;
+    height: 309px;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .right-side {
+    width: 90%;
+    max-width: 300px; /* Adjusted maximum width */
+    margin: 20px auto;
+    padding: 10px;
+  }
+}
+
   
