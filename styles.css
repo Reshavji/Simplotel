@@ -112,7 +112,7 @@ nav ul li a:hover {
   background-color: #ffd700;
   color: #000;
 }
-
+/* Styles for the Right side content */
 .content-right {
   background-image: url("./Images/pexels-robin-stickel-70497.jpg");
   background-size: cover;
@@ -134,30 +134,55 @@ nav ul li a:hover {
     justify-content: space-around;
     padding: 50px;
   }
-  
-  .left-side {
-    display: flex;
-    flex: 1; /* Equal distribution of space */
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-  }
-  
-  .first-col {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .first-col img {
-    width: 250px;
-    height: 200px;
-    margin-bottom: 10px;
-  }
-  
-  .second-col img {
-    width: 250px;
-    height: 409px;
-  }
+
+/* Styles for the left-side divs */
+.left-side {
+  display: flex;
+  flex: 1; /* Equal distribution of space */
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.first-col,
+.second-col {
+  flex: 1;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+
+.image-container {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  background-size: cover;
+  background-position: center;
+  flex-grow: 1; /* Fill remaining space */
+}
+
+/* Define background images for each image container */
+.image-4 {
+  height: 200px;
+  width: 300px;
+  background-image: url('./Images/pexels-rachel-claire-6752433.jpg');
+}
+
+.image-5 {
+  height: 200px;
+  width: 300px;
+  background-image: url('./Images/pexels-robin-stickel-70497.jpg');
+}
+
+.image-6 {
+  height: 409px;
+  width: 300px;
+  background-image: url('./Images/pexels-mister-mister-3434523.jpg');
+}
+
+ /* Styles for the Right-side divs */
   
   .right-side {
     flex: 1;
@@ -180,7 +205,7 @@ nav ul li a:hover {
     margin-top: 20px; /* Reduce margin */
     margin-bottom: 10px; /* Increase margin between box-data and click-btn */
   }
-  
+   /* Styles for the Click button */
   .click-btn {
     background-color: transparent;
     display: flex;
@@ -232,6 +257,15 @@ nav ul li a:hover {
     flex-direction: column;
     gap: 20px;
   }
+  .image-4,
+  .image-5 {
+    height: 200px; /* Set a smaller height for phones */
+    width: 100%; /* Adjust width proportionally */
+  }
+  .image-6{
+    height: 409 ;
+    width: 100%;
+  }
   .right-side {
     margin: 0;
   }
@@ -254,22 +288,18 @@ nav ul li a:hover {
     display: block;
     padding: 8px 0;
   }
-
-  .first-col img {
-    width: 150px;
-    height: 150px;
-    margin-bottom: 10px;
-  }
-
-  .second-col img {
-    width: 150px;
-    height: 309px;
-  }
-
   nav {
     display: none;
   }
-
+  .image-4,
+  .image-5 {
+    height: 100px; /* Set a smaller height for phones */
+    width: 100%; /* Adjust width proportionally */
+  }
+  .image-6{
+    height: 209px ;
+    width: 100%;
+  }
   .right-side {
     width: 90%;
     max-width: 300px; /* Adjusted maximum width */
