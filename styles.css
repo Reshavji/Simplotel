@@ -159,14 +159,34 @@ nav ul li a:hover {
   justify-content: center;
   flex-direction: column;
 }
-
 .image-container {
   width: 100%;
   height: auto;
   background-size: cover;
   background-position: center;
-  flex-grow: 1; /* Fill remaining space */
+  flex-grow: 1;
+  transition: transform 0.3s ease;
+  animation: bell-swing 5s infinite alternate; /* Continuous bell-like swing animation */
 }
+
+.image-container:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transform: scale(1.2) rotate(10deg); /* Modify the hover effect as needed */
+}
+
+@keyframes bell-swing {
+  0% {
+    transform: rotate(-1deg);
+  }
+  50% {
+    transform: rotate(1deg);
+  }
+  100% {
+    transform: rotate(-1deg);
+  }
+}
+
+
 
 /* Define background images for each image container */
 .image-4 {
@@ -230,6 +250,42 @@ nav ul li a:hover {
   #arrow-icon:hover{
     width: 30px;
   }
+/* Footer styles */
+footer {
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0; /* Add padding for space around content */
+}
+
+.footer-content {
+  text-align: center;
+}
+
+.footer-content p {
+  margin-bottom: 0;
+}
+
+.footer-content p,
+.footer-content p a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-content p .highlight {
+  color: #ffd700; /* Change color for highlighted text */
+  text-decoration: underline; /* Add underline */
+}
+
+.footer-content p .highlight:hover {
+  text-decoration: none; /* Remove underline on hover */
+}
+
+
+
+
 /* Media Queries */
 @media only screen and (max-width: 1128px) {
   /* Styles for tablets */
@@ -286,6 +342,15 @@ nav ul li a:hover {
    height: auto;
     max-height: 200px;
   }
+  footer {
+    height: auto;
+  }
+
+  .footer-content {
+    padding: 0 20px;
+    line-height: normal; /* Reset line height for smaller screens */
+  }
+
 }
 
 @media only screen and (max-width: 550px) {
