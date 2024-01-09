@@ -158,9 +158,6 @@ nav ul li a:hover {
     display: none;
   }
   
-  /* Hide the navigation by default */
- 
-  
   /* Show the hamburger icon only for small devices */
   #ham-icon {
     height: 25px;
@@ -223,15 +220,15 @@ nav ul li a:hover {
   
     nav ul li {
       display: block;
-      width: 100%; /* Make each list item take 100% width */
+      width: 100%; 
       text-align: center; /* Center the text */
       margin: 0;
       padding: 8px 0; /* Adjust padding for smaller screens */
     }
   
     nav ul li a {
-      display: block; /* Ensure links take up the full width on smaller screens */
-      padding: 8px 0; /* Adjust padding for smaller screens */
+      display: block; 
+      padding: 8px 0;
     }
   
     .first-col img {
@@ -248,7 +245,7 @@ nav ul li a:hover {
         display: none;
       }
     .right-side {
-      width: 90%; /* Adjust the width of the right-side content */
+      width: 90%; 
       margin: 20px auto;
       padding: 10px;
     }
