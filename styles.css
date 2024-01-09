@@ -49,7 +49,7 @@ nav ul li a:hover {
 /* Show the hamburger icon only for small devices */
 #ham-icon {
   height: 25px;
-  margin-right: 20px;
+  margin-left: 90%;
   display: none;
   
 }
