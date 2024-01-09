@@ -160,21 +160,25 @@ nav ul li a:hover {
   }
   
   .right-side {
-    flex: 1; /* Equal distribution of space */
+    flex: 1;
     background-color: #ff7171;
     font-family: Arial, Helvetica, sans-serif;
-    max-width: 40%; 
-    height: auto; 
-    padding: 20px;
-    margin-left: 5%; 
-    box-sizing: border-box; 
+    max-width: 35%;
+    padding: 20px; /* Adjusted padding */
+    margin-left: 3%;
+  }
+  
+  .box-title {
+    margin-top: 0; /* Remove default margin */
+    margin-bottom: 5px; /* Reduce margin */
   }
   
   .box-data {
     font-size: 3rem;
     font-weight: 700;
     letter-spacing: 5px;
-    word-wrap: break-word; /* Allow long words to break and wrap */
+    margin-top: 20px; /* Reduce margin */
+    margin-bottom: 10px; /* Increase margin between box-data and click-btn */
   }
   
   .click-btn {
@@ -182,15 +186,19 @@ nav ul li a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px;
+    gap: 5px; /* Reduce gap between the button content and the icon */
     border: none;
     text-align: center;
+    margin-top: 25px; /* Adjusted margin */
   }
   
   #arrow-icon {
     height: 20px;
   }
   
+  #arrow-icon:hover{
+    width: 30px;
+  }
 /* Media Queries */
 @media only screen and (max-width: 1128px) {
     /* Styles for tablets */
