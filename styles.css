@@ -283,7 +283,10 @@ footer {
   text-decoration: none; /* Remove underline on hover */
 }
 
-
+.github-link a{
+  color: gold;
+  text-decoration: none;
+}
 
 
 /* Media Queries */
